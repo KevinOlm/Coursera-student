@@ -1,0 +1,83 @@
+/*General styles*/
+*
+{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+h1
+{
+	margin: 30px;
+	text-align: center;
+}
+section
+{
+	padding: 20px;
+}
+section > div
+{
+	border: 1px solid black;
+	position: relative;
+	background-color: #C0C0C0;
+	padding: 15px;
+	padding-top: 40px;
+	height: 300px;
+	overflow: auto;
+}
+div > h2
+{
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	border: 1px solid black;
+	text-align: right;
+}
+.h201
+{
+	background-color: orange;
+}
+.h202
+{
+	background-color: lightblue;
+}
+.h203
+{
+	background-color: lightgreen;
+}
+
+/*Styles for large devices (992px+)*/
+@media (min-width: 992px)
+{
+	section
+	{
+		float: left;
+		width: 33%;
+	}
+	section > div
+	{
+		height: 400px;
+	}
+}
+
+/*Styles for medium devices*/
+@media (min-width: 768px) and (max-width: 991px)
+{
+	section
+	{
+		float: left;
+		width: 50%
+	}
+	.s03
+	{
+		width: 100%;
+	}
+	section > div
+	{
+		height: 400px;
+	}
+	.s03 > div
+	{
+		height: 200px;
+	}
+}
